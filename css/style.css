@@ -1,0 +1,115 @@
+.items_tabs{
+	background-color: #F1F1F1;
+	padding-bottom: 30px;
+}
+
+.items_tabs__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.items_tabs--text {
+	display: block;
+	padding: 20px 30px 10px 30px;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.hearing_tabs--tabstext{
+	font-weight: bold;
+	display: block;
+}
+
+.hearing_tabs--sub_tabstext {
+	font-size: 11px;
+}
+
+.items_tabs--link {
+	padding: 20px 30px 10px 30px;
+}
+
+.items_tabs__constructors__img {
+	width: 85px;
+	border-radius: 50%;
+}
+
+.items_tabs__vue, .items_tabs__height, .items_tabs__constructors {
+	display: flex;
+	justify-content: space-around;
+}
+
+.items_tabs__vue li , .items_tabs__height li , .items_tabs__constructors li {
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	border: 1px solid #D6D6D6;
+	list-style: none;
+	position: relative;
+}
+
+.items_tabs_border{
+	border: 1px solid #169AFF!important;
+}
+
+.items_tabs__vue li label, .items_tabs__height li label, .items_tabs__constructors li label{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.items_tabs__vue li {
+	width: 220px;
+	height: 70px;
+}
+
+.items_tabs__height li {
+	width: 220px;
+	height: 40px;
+}
+
+.items_tabs__constructors li {
+	width: 160px;
+	height: 212px;
+}
+
+.items_tabs__vue_active, .items_tabs__height_active, .items_tabs__constructors_active{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.items_tabs input[type=radio] {
+	display: none;
+}
+
+.items_tabs__check_vue_box, .items_tabs__check_height_box, .items_tabs__check_constructor_box{
+	display: none;
+	border: 1px solid #94C551;
+	width: 16px;
+	height: 16px;
+	border-radius: 5px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 100;
+
+}
+
+.items_tabs__check_vue_sign, .items_tabs__check_height_sign, .items_tabs__check_constructors_sign{
+	display: none;
+	font-size: 14px;
+	color: #94C551;
+	position: absolute;
+	top: 2px;
+	right: 7px;
+}
+
+.items_tabs__check_vue_active, .items_tabs__check_height_active, .items_tabs__check_constructor_active {
+	display: block;
+}

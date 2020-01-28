@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>myTabs JQuery</title>
+</head>
+<body>
+<div class="items_tabs">
+		<div class="items_tabs__top">
+			<span class="items_tabs--text">Список1</span>
+			<a href="#" class="items_tabs--link">тут ссылка</a>		
+		</div>
+		<ul class="items_tabs__vue ">
+			 <li id="tab-1" class="items_tabs_border">
+			 <label for="tab1">
+			 	<input name="vue" type="radio" value="universal"/>
+			 	<span class="hearing_tabs--tabstext">текст1</span>
+			 	<span class="hearing_tabs--sub_tabstext">описание1</span>
+			 
+			 	<div class="items_tabs__check_vue_box items_tabs__check_vue_active"></div>
+			 	<div class="items_tabs__check_vue_sign items_tabs__check_vue_active">&#10004;</div>
+			 </label>	
+			 </li>
+
+			 <li id="tab-2">
+			 <label for="tab2">
+			 	<input name="vue" type="radio" value="right"/>
+			 	<span class="hearing_tabs--tabstext">текст2</span>
+			 	<span class="hearing_tabs--sub_tabstext">описание2</span>
+			 
+			 	<div class="items_tabs__check_vue_box"></div>
+			 	<div class="items_tabs__check_vue_sign">&#10004;</div>
+			</label>
+			 </li>
+			 <li id="tab-3">
+			 <label for="tab3">
+			 	<input name="vue" type="radio" value="left"/>
+			 	<span class="hearing_tabs--tabstext">текст3</span>
+			 	<span class="hearing_tabs--sub_tabstext">описание3</span>
+			 </label>
+			 	<div class="items_tabs__check_vue_box"></div>
+			 	<div class="items_tabs__check_vue_sign">&#10004;</div>
+			 </li>
+		</ul>
+		<span class="items_tabs--text">Список2</span>
+		<ul class=" items_tabs__height">
+			 <li id="tab-4" class="items_tabs_border">
+			 <label for="tab4">
+			 	<input name="height" type="radio" value="h500"/>
+			 	<span class="hearing_tabs--tabstext">текс4</span>
+			 </label>
+				 <div class="items_tabs__check_height_box items_tabs__check_height_active"></div>
+			 	<div class="items_tabs__check_height_sign items_tabs__check_height_active">&#10004;</div>
+			 </li>
+			 <li id="tab-5">
+			 <label for="tab5">
+			 <input name="height" type="radio" value="h1200"/>
+			 	<span class="hearing_tabs--tabstext">текс5</span>
+			 </label>
+			 	<div class="items_tabs__check_height_box"></div>
+			 	<div class="items_tabs__check_height_sign">&#10004;</div>
+			 </li>
+			 <li id="tab-6">
+			 <label for="tab6"><input name="height" type="radio" value="h1800"/>
+			 	<span class="hearing_tabs--tabstext">теск6</span>
+			 </label>
+			 	<div class="items_tabs__check_height_box"></div>
+			 	<div class="items_tabs__check_height_sign">&#10004;</div>
+			 </li>
+		</ul>
+		<span class="items_tabs--text">Список3</span>
+		<ul class="items_tabs__constructors">
+			 <li id="tab-7" class="items_tabs_border">
+			 <label for="tab7">
+			 	<input name="constructor" type="radio" value="onerowdeaf"/>
+			 	<span class="hearing_tabs--tabstext">текст7</span>
+			 	<span class="hearing_tabs--sub_tabstext">описание7</span>
+			 </label>
+			 	<div class="items_tabs__check_constructor_box items_tabs__check_constructor_active"></div>
+			 	<div class="items_tabs__check_constructors_sign items_tabs__check_constructor_active">&#10004;</div>
+			 </li>
+			  <li id="tab-8">
+			  <label for="tab8">
+			  	<input name="constructor" type="radio" value="onerowcoacs"/>
+			 	<span class="hearing_tabs--tabstext">текст8</span>
+			 	<span class="hearing_tabs--sub_tabstext">описание8</span>
+			 </label>
+			 	<div class="items_tabs__check_constructor_box"></div>
+			 	<div class="items_tabs__check_constructors_sign">&#10004;</div>
+			 </li>
+			  <li id="tab-9">
+			  <label for="tab9">
+			  	<input name="constructor" type="radio" value="tworowdear"/>
+			 	<span class="hearing_tabs--tabstext">текст9</span>
+			 	<span class="hearing_tabs--sub_tabstext">описание9</span>
+			 </label>
+			 	<div class="items_tabs__check_constructor_box"></div>
+			 	<div class="items_tabs__check_constructors_sign">&#10004;</div>
+			 </li>
+			  <li id="tab-10">
+			  <label for="tab10">
+			  	<input name="constructor" type="radio" value="tworowcoacs"/>
+			 	<span class="hearing_tabs--tabstext">текст10</span>
+			 	<span class="hearing_tabs--sub_tabstext">описание10</span>
+			 </label>
+			 	<div class="items_tabs__check_constructor_box"></div>
+			 	<div class="items_tabs__check_constructors_sign">&#10004;</div>
+			 </li> 
+		</ul>
+	</div>	 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 <div class="items_tab_container">     
+			  <div id="universal" class="tab_content one">контент1</div>
+			  <div id="right" class="tab_content one">контент2</div>
+			  <div id="left" class="tab_content one">контент3</div>
+		</div>
+		<div class="items_tab_container"> 	
+			<div id="h500" class="tab_content2 two">контент4</div>
+			<div id="h1200" class="tab_content2 two">контент5</div>
+			<div id="h1800" class="tab_content2 two">контент6</div>
+		</div>
+		<div class="items_tab_container">
+			<div id="onerowdeaf" class="tab_content3 three">контент7</div>
+			<div id="onerowcoacs" class="tab_content3 three">контент8</div>
+			<div id="tworowdear" class="tab_content3 three">контент9</div>
+			<div id="tworowcoacs" class="tab_content3 three">контент10</div>
+		</div>
+  
+
+    
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>    
+</body>
+</html>
